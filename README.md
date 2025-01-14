@@ -1,13 +1,13 @@
 ## Car Assurance Management System
 
-**Overview**
+### Overview
 
 This program is a console-based Car Assurance management system developped in C++. Each client record includes realistic personal and insurance-related fields, such as name, age, contact information, car value, accident history, license suspensions, and policy type. The system calculates risk, trust scores, and monthly premiums based on these parameters.
 
 Clients are stored in a BST (Binary Search Tree), maintained in sorted order by client_id.
 Sorting ensures clients are kept in ascending order by their unique IDs, enabling efficient search operations.
 
-**Realistic Client Data**
+### Realistic Client Data
 
 Each client record contains fields such as:
 
@@ -18,13 +18,13 @@ License suspensions count.<br>
 
 These fields impact the computation of risk scores, trust scores, and monthly premiums.
 
-**Dynamic Calculations**
+### Dynamic Calculations
 
 *Risk Score*: Calculated from client details, including car value, accidents, and suspensions.<br>
 *Trust Score*: Evaluates client reliability based on accident history, suspensions, policy type, and computed risk.<br>
 *Monthly Premium*: Determined by combining risk and trust scores, policy type, and a base fee.<br>
 
-**Data Validation**
+### Data Validation
 
 Inputs are validated to ensure realistic and non-negative values (e.g., client age ≥ 18, non-negative accident counts).
 Operations via Console Menu
