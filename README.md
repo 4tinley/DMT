@@ -36,44 +36,48 @@ Operations via Console Menu
 *Remove Client*: Deletes a client record from the system.<br>
 *Recompute All Scores*: Recalculates risk, trust scores, and monthly premiums for all clients based on the latest data.<br>
 <p style="color: #999; font-size: 10px">Builded and runned with Visual Studio 2022</p>
-Follow these steps to build and run the code in Visual Studio 2022:
 
-Clone or Download the Repository
-Ensure you have the following files in a single folder:
+<details>
+  <summary>How to use</summary>
 
-incl.h
-struct.cpp
-main.cpp
-Create a New Console Application Project
+    Clone or Download the Repository
+    Ensure you have the following files in a single folder:
 
-Open Visual Studio 2022.
-Select File > New > Project....
-Choose Console App under the C++ section and click Next.
-Name your project and choose a location, then click Create.
-Add Existing Files to the Project
+    incl.h
+    struct.cpp
+    main.cpp
+    Create a New Console Application Project
 
-In the Solution Explorer, right-click on the project name.
-Choose Add > Existing Item....
-Navigate to the folder containing the downloaded files.
-Select incl.h, struct.cpp, and main.cpp, then click Add.
-Verify Project Settings
+    Open Visual Studio 2022.
+    Select File > New > Project....
+    Choose Console App under the C++ section and click Next.
+    Name your project and choose a location, then click Create.
+    Add Existing Files to the Project
 
-Ensure that all three files (incl.h, struct.cpp, and main.cpp) are visible under the project in the Solution Explorer.
-Confirm that the project uses at least the C++11 standard (which is generally the default for Visual Studio 2022).
-Build the Project
+    In the Solution Explorer, right-click on the project name.
+    Choose Add > Existing Item....
+    Navigate to the folder containing the downloaded files.
+    Select incl.h, struct.cpp, and main.cpp, then click Add.
+    Verify Project Settings
 
-Click on Build > Build Solution in the menu bar, or press Ctrl+Shift+B.
-Check the Output window for any compilation errors. All files should compile without errors.
-Run the Application
+    Ensure that all three files (incl.h, struct.cpp, and main.cpp) are visible under the project in the Solution Explorer.
+    Confirm that the project uses at least the C++11 standard (which is generally the default for Visual Studio 2022).
+    Build the Project
 
-After a successful build, run the program by selecting Debug > Start Without Debugging from the menu, or by pressing Ctrl+F5.
-A console window should appear displaying the menu for the Car Assurance Management System.
-Interact with the System
+    Click on Build > Build Solution in the menu bar, or press Ctrl+Shift+B.
+    Check the Output window for any compilation errors. All files should compile without errors.
+    Run the Application
 
-Use the console menu to add, retrieve, update, or remove clients, as well as to display all clients or recompute scores.
-Follow the on-screen prompts to enter the required information.
-Formulas and Calculations
-Risk Score: Factors in car value, driver's age, at-fault accidents, license suspensions, and other risk influencers.
-Trust Score: Rewards not-at-fault accidents, penalizes at-fault accidents and suspensions, adjusts for policy type, and reduces by half the risk score.
-Monthly Premium: Starts with a base fee, increases with higher risk, provides discounts for higher trust scores, and adjusts based on policy type.
-Note: The formulas used for computation are examples!
+    After a successful build, run the program by selecting Debug > Start Without Debugging from the menu, or by pressing Ctrl+F5.
+    A console window should appear displaying the menu for the Car Assurance Management System.
+    Interact with the System
+
+    Use the console menu to add, retrieve, update, or remove clients, as well as to display all clients or recompute scores.
+    Follow the on-screen prompts to enter the required information.
+    Formulas and Calculations
+    Risk Score: Factors in car value, driver's age, at-fault accidents, license suspensions, and other risk influencers.
+    Trust Score: Rewards not-at-fault accidents, penalizes at-fault accidents and suspensions, adjusts for policy type, and reduces by half the risk score.
+    Monthly Premium: Starts with a base fee, increases with higher risk, provides discounts for higher trust scores, and adjusts based on policy type.
+    Note: The formulas used for computation are examples!
+
+</details> 
